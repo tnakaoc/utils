@@ -327,7 +327,7 @@ using ana::energy;
 	{
 		FILE* fp=fopen(tfname,"w");
 		print_fileheader(fp);
-		fprintf(fp,"#ch GS20 GS30 Trigger GS20(gated) GS30(gated) GS20(frame) GS30(frame) GS20(bootstrap T) GS30(bootstrap T) BinWidth\n");
+		fprintf(fp,"#ch GS20 GS30 Trigger GS20(gated) GS30(gated) GS20(frame) GS30(frame) GS20(bootstrap T) GS30(bootstrap T) GS20(frame smoothed) BinWidth\n");
 		for(size_t i=0;i<T_max;++i)
 		{
 			auto tval = thist[7][i];
